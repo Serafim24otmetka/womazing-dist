@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <meta name="theme-color" content="">
+    <link rel="icon" type="image/png" href="">
+    <link rel="apple-touch-icon" href="#">
+    <!-- keywords SEO -->
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- OG Tags -->
+    <meta name="og:title" content="Womazing">
+    <meta name="og:description" content="#">
+    <meta name="og:type" content="article">
+    <meta name="og:image" content="#">
+    <meta name="og:site_name" content="Womazing">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20220502224902">
+    <!--  title  -->
+    <title>Главная</title>
+</head>
+
+    <body>
+    <header class="header">
+    <div class="container">
+        <div class="menu-wrapper">
+            <a href="index.html" class="menu__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a href="shop.html">Магазин</a>
+                </li>
+                <li class="menu__item">
+                    <a href="about.html">О бренде</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="menu-mobile-open-wrapper">
+                <ul class="menu-mobile">
+                    <li class="menu-mobile__item">
+                        <a href="index.html" class="menu__item-href">Главная</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="shop.html" class="menu__item-href">Магазин</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="about.html" class="menu__item-href">О бренде</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="contact.html" class="menu__item-href">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-tel-wrapper">
+                <button class="menu-tel-modal" type="button"></button>
+                <a href="tel:+74958235412" class="menu__tel">+7 (495) 823-54-12</a>
+                <button id="burger" class="menu-burger" type="button">
+                    <span></span>
+                </button>
+                <a href="cart.html" class="menu__cart"></a>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="header-modal-window">
+    <div class="header-modal-window-overlay"></div>
+    <div class="header-modal-window-wrapper">
+        <button type="button" class="header-modal-window-wrapper__btn-close"></button>
+        <h3 class="header-modal-window-wrapper__title">
+            Заказать обратный звонок
+        </h3>
+        <form action="" class="modal-window-form js-form">
+            <input name="name" type="text" class="modal-window-form__item form__item" placeholder="Имя" required>
+            <input name="email" type="mail" class="modal-window-form__item form__item" placeholder="E-mail" required>
+            <input name="tel" type="tel" class="modal-window-form__item form__item" placeholder="Телефон" required>
+            <button type="submit" class="btn-primery modal-window-form__btn" data-submit>Заказать звонок</button>
+        </form>
+    </div>
+</div>
+
+<div class="header-modal-window  header-modal-window_confirmed">
+    <div class="header-modal-window-overlay"></div>
+    <div class="header-modal-window-wrapper header-modal-window-wrapper_confirmed">
+        <h3 class="header-modal-window-wrapper__title">
+            Отлично! Мы скоро вам перезвоним.
+        </h3>
+        <button type="button" class="header-modal-window-confirmed__btn btn-secondary">Закрыть</button>
+    </div>
+</div>
+    
+    <main class="shop-page">
+        <section class="section-name-title">
+            <div class="container">
+                <div class="name-page-wrapper">
+                    <h2 class="name-page-wrapper__title">
+                        Магазин
+                    </h2>
+                    <div class="breadcrumbs-wrapper">
+                        <a href="index.html" class="breadcrumbs-wrapper__item breadcrumbs-wrapper__item-href">Главная</a>
+                        <span class="breadcrumbs-wrapper__item breadcrumbs-wrapper-decor"></span>
+                        <span class="breadcrumbs-wrapper__item breadcrumbs-wrapper__item-active">Магазин</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="shop-tabs-wrapp">
+                    <button type="button" class="shop-tabs-wrapp__item shop-tabs-active" data-filter="all">Все</button>
+                    <button type="button" class="shop-tabs-wrapp__item" data-filter="coats">Пальто</button>
+                    <button type="button" class="shop-tabs-wrapp__item" data-filter="sweatshirts">Свитшоты</button>
+                    <button class="shop-tabs-wrapp__item" data-filter="cardigans">Кардиганы</button>
+                    <button type="button" class="shop-tabs-wrapp__item" data-filter="smock">Толстовки</button>
+                </div>
+                <p class="show-products">
+                    Показано: <span>9</span> из <span>12</span> товаров
+                </p>
+                <div class="products-wrapper">
+                    <div class="products-wrapper__item" data-cat="sweatshirts">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-1.webp" type="image/webp"><img src="img/shop-1.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Футболка USA
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item products-wrapper-content-price-tags__item_old">
+                                    $229
+                                </span>
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="coats">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-2.webp" type="image/webp"><img src="img/shop-2.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Купальник Glow
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="cardigans">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-3.webp" type="image/webp"><img src="img/shop-3.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Свитшот Sweet Shot
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="sweatshirts">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-1.webp" type="image/webp"><img src="img/shop-1.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Футболка USA
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item products-wrapper-content-price-tags__item_old">
+                                    $229
+                                </span>
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="coats">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-2.webp" type="image/webp"><img src="img/shop-2.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Купальник Glow
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="cardigans">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-3.webp" type="image/webp"><img src="img/shop-3.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Свитшот Sweet Shot
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="sweatshirts">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-1.webp" type="image/webp"><img src="img/shop-1.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Футболка USA
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item products-wrapper-content-price-tags__item_old">
+                                    $229
+                                </span>
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="smock">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-2.webp" type="image/webp"><img src="img/shop-2.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Купальник Glow
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="cardigans">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-3.webp" type="image/webp"><img src="img/shop-3.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Свитшот Sweet Shot
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="smock">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-1.webp" type="image/webp"><img src="img/shop-1.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Футболка USA
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item products-wrapper-content-price-tags__item_old">
+                                    $229
+                                </span>
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="coats">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-2.webp" type="image/webp"><img src="img/shop-2.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Купальник Glow
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-wrapper__item" data-cat="smock">
+                        <a href="one-itmes.html" class="products-wrapper__item-href">
+                            <picture><source srcset="img/shop-3.webp" type="image/webp"><img src="img/shop-3.png" alt="img" class="products-wrapper__item-img"></picture>
+                            <div class="card__overlay"></div>
+                        </a>
+                        <div class="products-wrapper-content">
+                            <h5 class="products-wrapper-content__name">
+                                Свитшот Sweet Shot
+                            </h5>
+                            <div class="products-wrapper-content-price-tags">
+                                <span class="products-wrapper-content-price-tags__item">
+                                    $129
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="show-products">
+                    Показано: <span>9</span> из <span>12</span> товаров
+                </p>
+                <ul class="pagination-wrapper">
+                    <li class="pagination-wrapper__item pagination-active">
+                        <span>
+                            1
+                        </span>
+                    </li>
+                    <li class="pagination-wrapper__item">
+                        <a href="#" class="pagination-wrapper__item-href">2</a>
+                    </li>
+                    <li class="pagination-wrapper__item-arrow">
+                        <a href="#" class="pagination-wrapper__item-arrow-btn"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="protection">
+                <a href="index.html" class="menu__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="protection-wrapper-content">
+                    <span class="protection-wrapper-content__documentation protection-wrapper-content__copyright">
+                        © Все права защищены
+                    </span>
+                    <a href="#" class="protection-wrapper-content__documentation">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="#" class="protection-wrapper-content__documentation">
+                        Публичная оферта
+                    </a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__item-href">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item-href">Магазин</a>
+                        <ul class="shop-menu">
+                            <li class="shop-menu__item">
+                                <a href="#">Пальто</a>
+                            </li>
+                            <li class="shop-menu__item">
+                                <a href="#">Свитшоты</a>
+                            </li>
+                            <li class="shop-menu__item">
+                                <a href="#">Кардиганы</a>
+                            </li>
+                            <li class="shop-menu__item">
+                                <a href="#">Толстовки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item-href">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item-href">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <a href="tel:+74958235412" class="contacts__item contacts__tel">+7 (495) 823-54-12</a>
+                <a href="mailto:hello@womazing.com" class="contacts__item contacts__email">hello@womazing.com</a>
+                <ul class="partners-wrapp">
+                    <li class="partners-wrapp__item">
+                        <!-- noindex -->
+                        <a rel="nofollow noopener noreferrer" href="#" class="partners-wrapp__item-href" target="_blank">
+                            <img src="img/instagram.svg" alt="img">
+                        </a>
+                        <!-- /noindex -->
+                    </li>
+                    <li class="partners-wrapp__item">
+                        <!-- noindex -->
+                        <a rel="nofollow noopener noreferrer" href="#" class="partners-wrapp__item-href" target="_blank">
+                            <img src="img/facebook.svg" alt="img">
+                        </a>
+                        <!-- /noindex -->
+                    </li>
+                    <li class="partners-wrapp__item">
+                        <!-- noindex -->
+                        <a rel="nofollow noopener noreferrer" href="#" class="partners-wrapp__item-href" target="_blank">
+                            <img src="img/twitter.svg" alt="img">
+                        </a>
+                        <!-- /noindex -->
+                    </li>
+                </ul>
+                <!-- noindex -->
+                <a href="#" rel="nofollow noopener noreferrer" class="contacts__pay" target="_blank">
+                    <picture><source srcset="img/visa-mastercard-1.webp" type="image/webp"><img src="img/visa-mastercard-1.png" alt="img"></picture>
+                </a>
+                <!-- /noindex -->
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js?_v=20220502224902"></script>
+<script src="js/app.min.js?_v=20220502224902"></script>
+    </body>
+</html>
